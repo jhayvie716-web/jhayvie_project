@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jhayvie M. Cabasag — Portfolio</title>
+  <meta name="description" content="BSIT 3rd Year student at NORSU. Building clean websites and learning full-stack development." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav home-nav" id="main-nav">
+    <a href="#home" class="logo">Jhayvie C.</a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#work" class="nav-link" data-section="work">Work</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-hire desktop">Hire me</a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <a href="#home" class="mobile-link active" data-section="home">Home</a>
+    <a href="#about" class="mobile-link" data-section="about">About</a>
+    <a href="#work" class="mobile-link" data-section="work">Work</a>
+    <a href="#skills" class="mobile-link" data-section="skills">Skills</a>
+    <a href="#contact" class="mobile-link" data-section="contact">Contact</a>
+    <a href="#contact" class="btn-hire">Hire me</a>
+  </div>
+
+  <!-- ========== HOME ========== -->
+  <section id="home" class="home-hero section">
+    <div class="home-content">
+      <div class="home-text">
+        <h1>Jhayvie<br>Cabasag</h1>
+        <p>BSIT 3rd Year student at NORSU. I design and build clean websites while learning full-stack development.</p>
+        <div class="home-cta">
+          <a href="#work" class="btn btn-primary">See my work</a>
+          <a href="#about" class="btn btn-outline">About me</a>
+        </div>
+      </div>
+      <div class="home-profile">
+        <div class="profile-circle water-ripple">
+          <img src="img/profile.jpg" alt="Jhayvie M. Cabasag" />
+        </div>
+      </div>
+    </div>
+    <div class="featured-strip">
+      <div class="featured-item"><strong>Featured</strong> Harbor Coffee, brand and site</div>
+      <div class="featured-item">Nordlys Studio, web design</div>
+      <div class="featured-item">Field Notes Press, identity</div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section page-section">
+    <div class="about-section">
+      <div class="about-image water-ripple">
+        <img src="img/about-profile.jpg" alt="Jhayvie M. Cabasag portrait" />
+      </div>
+      <div class="about-content">
+        <h1>Hi, I'm Jhayvie.</h1>
+        <p class="bio">I'm a 20-year-old BSIT 3rd Year student currently studying at Negros Oriental State University (NORSU). I love turning ideas into clean, functional websites and learning something new every project.</p>
+        <p class="bio-secondary">I enjoy working on real projects where I can practice design and code together. Outside of school, I experiment with UI layouts, help classmates with their systems, and keep improving my frontend skills.</p>
+
+        <div class="stats">
+          <div class="stat-card water-ripple">
+            <span class="number">20</span>
+            <span class="label">Years old</span>
+          </div>
+          <div class="stat-card water-ripple">
+            <span class="number">3rd</span>
+            <span class="label">Year BSIT</span>
+          </div>
+          <div class="stat-card water-ripple">
+            <span class="number">NORSU</span>
+            <span class="label">Currently studying</span>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <h3>Timeline</h3>
+          <ul class="timeline-list">
+            <li>
+              <strong>2024 – Present</strong>
+              BSIT 3rd Year, Negros Oriental State University
+            </li>
+            <li>
+              <strong>2023 – 2024</strong>
+              BSIT 2nd Year — started building personal projects
+            </li>
+            <li>
+              <strong>2022 – 2023</strong>
+              BSIT 1st Year — introduced to programming & web fundamentals
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORK ========== -->
+  <section id="work" class="section page-section">
+    <div class="work-section">
+      <div class="work-header">
+        <h1>Selected work</h1>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="print">Print</button>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <article class="project-card featured water-ripple" data-category="branding">
+          <div class="thumb">
+            <img src="img/harbor-coffee.jpg" alt="Harbor Coffee" />
+          </div>
+          <div class="info">
+            <h3>Harbor Coffee</h3>
+            <span>Branding and web</span>
+          </div>
+        </article>
+
+        <article class="project-card water-ripple" data-category="web">
+          <div class="thumb">
+            <img src="img/nordlys-studio.jpg" alt="Nordlys Studio" />
+          </div>
+          <div class="info">
+            <h3>Nordlys Studio</h3>
+            <span>Web</span>
+          </div>
+        </article>
+
+        <article class="project-card water-ripple" data-category="branding">
+          <div class="thumb">
+            <img src="img/field-notes.jpg" alt="Field Notes Press" />
+          </div>
+          <div class="info">
+            <h3>Field Notes Press</h3>
+            <span>Branding</span>
+          </div>
+        </article>
+
+        <article class="project-card water-ripple" data-category="print">
+          <div class="thumb">
+            <img src="img/tidal-bakery.jpg" alt="Tidal Bakery" />
+          </div>
+          <div class="info">
+            <h3>Tidal Bakery</h3>
+            <span>Print</span>
+          </div>
+        </article>
+
+        <article class="project-card water-ripple" data-category="web">
+          <div class="thumb">
+            <img src="img/oak-ember.jpg" alt="Oak & Ember" />
+          </div>
+          <div class="info">
+            <h3>Oak & Ember</h3>
+            <span>Web</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section page-section">
+    <div class="skills-section">
+      <h1>What I do</h1>
+
+      <div class="services">
+        <div class="service-card water-ripple">
+          <h3>Web design</h3>
+          <p>Clean, responsive layouts focused on clarity and good user experience.</p>
+        </div>
+        <div class="service-card water-ripple">
+          <h3>Frontend development</h3>
+          <p>HTML, CSS, and JavaScript — building interfaces that actually work.</p>
+        </div>
+        <div class="service-card water-ripple">
+          <h3>UI & prototypes</h3>
+          <p>Wireframes and simple prototypes so ideas can be tested early.</p>
+        </div>
+      </div>
+
+      <div class="skills-bottom">
+        <div class="tools">
+          <h3>Tools</h3>
+          <div class="tool-item">
+            <div class="label"><span>HTML & CSS</span></div>
+            <div class="bar"><div class="bar-fill" data-width="90%"></div></div>
+          </div>
+          <div class="tool-item">
+            <div class="label"><span>JavaScript</span></div>
+            <div class="bar"><div class="bar-fill" data-width="75%"></div></div>
+          </div>
+          <div class="tool-item">
+            <div class="label"><span>Figma</span></div>
+            <div class="bar"><div class="bar-fill" data-width="70%"></div></div>
+          </div>
+        </div>
+
+        <div class="process">
+          <h3>How I work</h3>
+          <ul class="process-list">
+            <li><strong>1. Listen.</strong> Understand the goal and constraints.</li>
+            <li><strong>2. Sketch.</strong> Quick wireframes and layout options.</li>
+            <li><strong>3. Build.</strong> Code the chosen direction cleanly.</li>
+            <li><strong>4. Polish.</strong> Test, refine, and hand over.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="contact-hero">
+      <div class="contact-text">
+        <h1>Let's<br>work<br>together</h1>
+        <p>Tell me about your project. I reply as soon as I can between classes.</p>
+        <a href="mailto:jhayvie.cabasag@gmail.com" class="contact-email">jhayvie.cabasag@gmail.com</a>
+        <div class="social-links">
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required placeholder="Alex Rivera" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="alex@studio.com" />
+          </div>
+          <div class="form-group">
+            <label for="details">Project details</label>
+            <textarea id="details" name="details" required placeholder="Tell me about the project, timeline and what you need..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Jhayvie M. Cabasag</span>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
